@@ -11,49 +11,16 @@ best places to stay cool in the summer on campus!
 
 ``` r
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
 knitr::opts_chunk$set(root.dir = '/home/marie/portfolio/UM')
 ```
 
 ``` r
 # Libraries
 library(raster)
-```
-
-    ## Loading required package: sp
-
-``` r
 library(tidyverse)
-```
-
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
-
-    ## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
-    ## ✓ tibble  3.0.4     ✓ dplyr   1.0.4
-    ## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
-    ## ✓ readr   1.4.0     ✓ forcats 0.5.0
-
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## x tidyr::extract() masks raster::extract()
-    ## x dplyr::filter()  masks stats::filter()
-    ## x dplyr::lag()     masks stats::lag()
-    ## x dplyr::select()  masks raster::select()
-
-``` r
 library(lubridate)
-```
-
-    ## 
-    ## Attaching package: 'lubridate'
-
-    ## The following objects are masked from 'package:raster':
-    ## 
-    ##     intersect, union
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     date, intersect, setdiff, union
-
-``` r
 library(RColorBrewer)
 library(leaflet)
 ```
@@ -94,37 +61,6 @@ mskStack <- function(rastFiles, tmpRst, msk){ # rastFiles: creates from list.fil
   rastSt
 }
 sLST <- mskStack(summerList, rstTmp, umShp)
-```
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-    ## Warning in projectRaster(rastOut, tmpRst): input and ouput crs are the same
-
-``` r
 orPal <- brewer.pal(n = 9, name = "OrRd")
 # Let's inspect the images for any obvious anomolies 
 plot(sLST, col = orPal) # Some of the rasters like the 2nd, 3rd and 13th look heavily modeled or there may clouds present
