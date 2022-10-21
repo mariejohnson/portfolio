@@ -3,12 +3,12 @@ title: "Summer Heat at the University of Montana"
 author: "Marie Johnson"
 date: "10/20/2022"
 output: github_document
+always_allow_html: true
 ---
 ## Objective
 In this code we will explore summer land surface temperatures (LST) at the 
 University of Montana (UMT) using ECOSTRESS LST data. We'll find the best places
 to stay cool in the summer on campus!
-## Libraries we will use:
 
 ```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -16,6 +16,7 @@ knitr::opts_chunk$set(root.dir = '/home/marie/portfolio/UM')
 ```
 
 ```{r libraries}
+# Libraries
 library(raster)
 library(tidyverse)
 library(lubridate)
