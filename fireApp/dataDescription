@@ -1,0 +1,16 @@
+About the data
+
+Datasets
+Primary production is one proxy of ecosystem functioning, which can be measured as gross primary production (GPP) or net primary production (NPP). GPP is the total amount of carbon fixation from atmospheric CO2 that occurs through the process of photosynthesis. Some of this chemical energy is lost by supporting metabolic processes (respiration) in plants. The remaining energy is stored as biomass in plants, this is referred to as NPP. This project used Landsat derived annual NPP gridded datasets available on Google Earth Engine (GEE; Gorelick et al., 2017) at 30m resolution (Robinson et al., 2018) using 35 years of data (1986-2020). These two metrics can tell us about the existence and growth of plants in an ecosystem. Therefore, we can use these data to examine ecosystem functioning pre and post-disturbance events such as wildfire. These datasets were produced specifically for the continental United States and use the Moderate Resolution Imaging Spectroradiometer (MODIS) MOD17 algorithm (Running et al., 2004) to calculate NPP. This improved finer resolution NPP product has been shown to detect discrete losses in NPP making it optimal to detect disturbance events (Robinson et al., 2018). Additionally it extends the chronological record of NPP to study broader timescales. 
+
+Fire data was obtained from the Monitoring Trends in Burn Severity (MTBS) database. MTBS datasets included burn perimeter and the differenced Normalized Burn Ratio (dNBR). The dNBR uses the Normalized Burn Ratio one year prior to the fire and one year postfire to describe burn severity as a continuous variable at a 30m resolution. The dNBR is often broken into classes that are described as high enhanced regrowth (-500 to -251), low enhanced regrowth (-250 to -101), unburned (-100 to 99), low severity (100 to 269), moderate-low severity (270 to 439), moderate-high severity (440 to 659) and high severity (660 to 1300) burn (Key and Benson 2006; Eidenshink et al. 2007). 
+
+Key, C. H., & Benson, N. C. (2006). Landscape assessment: Remote sensing of severity, the Normalized Burn Ratio. FIREMON: Fire Effects Monitoring and Inventory System. General Technical Report, RMRS-GTR-164-CD, 305–325. Retrieved from https://www.fs.fed.us/rm/pubs/rmrs_gtr164/rmrs_gtr164_13_land_assess.pdf
+
+Key, C. H., & Benson, N. C. (2006). Landscape assessment: Remote sensing of severity, the Normalized Burn Ratio. FIREMON: Fire Effects Monitoring and Inventory System. General Technical Report, RMRS-GTR-164-CD, 305–325. Retrieved from https://www.fs.fed.us/rm/pubs/rmrs_gtr164/rmrs_gtr164_13_land_assess.pdf
+
+Robinson, N.P., B.W. Allred, W.K. Smith, M.O. Jones, A. Moreno, T.A. Erickson, D.E. Naugle, and S.W. Running. 2018. Terrestrial primary production for the conterminous United States derived from Landsat 30 m and MODIS 250 m. Remote Sensing in Ecology and Conservation. doi:10.1002/rse2.74
+
+Running, S. W. (2018). Terrestrial primary production for the conterminous United States derived from Landsat 30 m and MODIS 250 m. Remote Sensing in Ecology and Conservation, 4(3), 264–280. https://doi.org/10.1002/rse2.74
+
+

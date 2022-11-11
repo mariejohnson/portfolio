@@ -1,0 +1,21 @@
+Net primary production fire time series 
+
+To run app you will need to have RStudio installed as well as the shiny, dplyr, and ggplot2 packages installed. To do so run the following command:
+
+install.packages(c("shiny", "dplyr", "ggplot2"))
+
+Additionally, you will need to set your working directory where you have saved your files. This can be done with the following code included in the R script:
+
+setwd("/home/marie/portfolio/") # change file path accordingly
+
+Once packages are installed and the working directory has been changed, save the updated code and simply click "Run App" in the upper right corner of the screen. If this does not show up, make sure the code has been saved, it should appear after it is saved. 
+
+Sources:
+Robinson, N.P., B.W. Allred, W.K. Smith, M.O. Jones, A. Moreno, T.A. Erickson, D.E. Naugle, and S.W. Running. 2018. Terrestrial primary production for the conterminous United States derived from Landsat 30 m and MODIS 250 m. Remote Sensing in Ecology and Conservation. doi:10.1002/rse2.74
+
+Eidenshink, J., Schwind, B., Brewer, K., Zhu, Z.-L., Quayle, B., & Howard, S. (2007). A Project for Monitoring Trends in Burn Severity. Fire Ecology, 3(1), 3–21. https://doi.org/10.4996/fireecology.0301003
+
+
+
+
+
